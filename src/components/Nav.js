@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import '../css/Nav.css';
 
+
 const Nav = () => {
     const [isSearchActive, setSearchActive] = useState(false)
     const [isSidebarOpen, setIsSidebarOpen] = useState(false)

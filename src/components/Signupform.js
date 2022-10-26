@@ -5,7 +5,6 @@ import '../css/Signupform.css'
 const Signupform = () => {
   return (
     <>
-      <Nav></Nav>
       <div className='signuppage-body'>Signupform</div> 
     </>
   )

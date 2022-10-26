@@ -14,13 +14,16 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Router>
     <Routes>
-      <Route path='/' element={<App/>}></Route>
-      <Route path='/signup' element={<Signupform/>}></Route>
-      <Route path='/login' element={<Loginform/>}></Route>
-      <Route path='/courses'  >
-        <Route index element={<Courses/>}/>
-        <Route path=':courseid' element={<CoursePage/>}></Route>
+      <Route path='/' element={<App/>} >
+        <Route path='courses'  >
+          <Route index element={<Courses/>}/>
+          <Route path=':courseid' element={<CoursePage/>}></Route>
+        </Route>
+        <Route path='signup' element={<Signupform/>}></Route>
+        <Route path='login' element={<Loginform/>}></Route>
       </Route>
+      
+      
     </Routes>
   </Router>
 );

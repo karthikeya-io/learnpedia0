@@ -5,7 +5,6 @@ import Nav from './Nav'
 const Courses = () => {
   return (
     <>
-      <Nav/>
       <div className='courses-body'>Courses</div>
     </>
   )

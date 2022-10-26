@@ -8,7 +8,6 @@ const CoursePage = () => {
     const { courseid } = useParams();
     return (
         <>
-            <Nav></Nav>
             <div className='coursepage-body'>CoursePage of id: {courseid}</div> 
         </>
     )
