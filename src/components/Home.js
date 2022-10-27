@@ -7,7 +7,7 @@ const Home = () => {
     <>
       <div >
         <div className='home-body'>
-          <video id='myVideo' src={BackImg} loop autoPlay muted smooth>
+          <video id='myVideo' src={BackImg} loop autoPlay muted >
           </video>
           <div className="content">
             <h1>Learnpedia</h1>

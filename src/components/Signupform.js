@@ -15,15 +15,21 @@ const Signupform = () => {
         }
       )
     })
-    console.log(formDetails);
   }
+
+  const submitHandler = (event) => {
+    event.preventDefault();
+    console.log(formDetails);
+    setFormDetails({});
+  }
+
   return (
     <>
       <div className='signuppage-body'>
         <div className="ccontainer">
           <div className="title">Registration</div>
           <div className="ccontent">
-            <form action="#">
+            <form action="#" onSubmit={submitHandler}>
               <div className="user-details">
                 <div className="input-box">
                   <span className="details">First Name</span>
