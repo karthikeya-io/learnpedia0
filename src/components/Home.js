@@ -13,7 +13,7 @@ const Home = () => {
             <h1>Learnpedia</h1>
             <p>Welcome to the education domain</p>
             <a href="/signup" ><button className='home-btn'>Join for free</button></a>
-            <a href="/business" ><button className='home-btn'>Try ERRORlist for business</button></a>
+            <a href="/business" ><button className='home-btn'>Try Learnpedia for business</button></a>
           </div>
         </div>
       </div>
