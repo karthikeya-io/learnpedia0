@@ -1,5 +1,4 @@
 import React,{useState} from 'react'
-import Nav from './Nav'
 import Image from '../images/loginimg2.jpg'
 import '../css/Loginform.css'
 
