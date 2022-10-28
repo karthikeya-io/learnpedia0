@@ -14,7 +14,6 @@ const Home = () => {
             <p>Welcome to the education domain</p>
             <a href="/signup" ><button className='home-btn'>Join for free</button></a>
             <a href="/business" ><button className='home-btn'>Try Learnpedia for business</button></a>
-            <button></button>
           </div>
         </div>
       </div>
