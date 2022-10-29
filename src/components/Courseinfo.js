@@ -3,7 +3,7 @@ import React from 'react'
 import '../css/Courseinfo.css'
 // import Nav from './Nav'
 import img from '../images/img.PNG'
-
+import courseinfo from '../images/coursesinfo.jpeg'
 const Courseinfo = () => {
     const styleobj={
         height: "200px",
@@ -12,13 +12,13 @@ const Courseinfo = () => {
         height: "60px",
     }
   return (
-    <>
+    <div style={{ backgroundColor:'white' }} >
       <div className="row-courseinfo">
 <div className="main-courseinfo">
   <h2>Programming with Python : HandsOn
     Introduction for Beginners</h2>
-  <h5>Uploaded/Last updated on: Dec 7, 2017</h5>
- <div className="fakeimg" style={styleobj}>Image</div>
+  <h5>Uploaded/Last updated on: Oct 28th, 2022</h5>
+ {/* <div className="fakeimg" style={styleobj}>Image</div> */}
  <p>Some text..</p> 
    <h2>Star Rating</h2> 
   
@@ -37,7 +37,7 @@ const Courseinfo = () => {
         WHAT YOU WILL LEARN
     </div>
     <div className="row">
-      {/*  <div className="col-sm-6"> */}
+       <div className="col-sm-6">
         <div>
           <div className="card">
             <div className="card-body">
@@ -46,7 +46,8 @@ const Courseinfo = () => {
             </div>
           </div>
         </div>
-        {/* <div className="col-sm-6"> */}
+        </div>
+        <div className="col-sm-6">
         <div>
           <div className="card">
             <div className="card-body">
@@ -55,7 +56,8 @@ const Courseinfo = () => {
             </div>
           </div>
         </div>
-         {/* <div className="col-sm-6">  */}
+        </div>
+         <div className="col-sm-6"> 
         <div>
             <div className="card">
               <div className="card-body">
@@ -64,8 +66,9 @@ const Courseinfo = () => {
               </div>
             </div>
           </div>
+          </div>
           <div className="col-sm-6"> 
-          {/*<div>*/}
+          <div>
             <div className="card">
               <div className="card-body">
                 <h5 className="card-title">Special title treatment</h5>
@@ -75,9 +78,9 @@ const Courseinfo = () => {
           </div>
       </div>
   </div>
-
+</div>
   <div>
-    {/* <div className="card text-white bg-info mb-3"> */}
+    <div className="card text-white bg-info mb-3">
     <div>
         <h5 className="card-header">About the course</h5>
         <div className="card-body">
@@ -87,7 +90,7 @@ const Courseinfo = () => {
       </div>
      <h3>About the course</h3>
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa nam, iusto itaque reiciendis voluptatem ab, error at quaerat accusamus perferendis similique nisi magni dignissimos dicta asperiores est dolores earum? Unde ea assumenda, ducimus, sapiente, nulla laudantium quam exercitationem soluta voluptatem tenetur possimus aut modi doloremque natus blanditiis iusto! Nesciunt, est?</p> 
-  {/* </div> */}
+  </div>
   </div>
 
   <div>
@@ -117,7 +120,7 @@ const Courseinfo = () => {
   </div>
 
   <div>
-    {/* <div className="card text-white bg-info mb-3"> */}
+    <div className="card text-white bg-info mb-3">
     <div>
         <h5 className="card-header">About the Insturctor</h5>
         <div className="card-body">
@@ -154,9 +157,9 @@ const Courseinfo = () => {
                 <li>Appoximately 4 months to complete</li>
             </ul>
         </div>
-        {/* <div className="card-footer">
+        <div className="card-footer">
             <button type="button" className="btn btn-outline-primary btn-lg">Enroll Now</button>
-        </div> */}
+        </div>
     </div>
     <div>
         <h3>Course is offered by:</h3>
@@ -170,9 +173,10 @@ const Courseinfo = () => {
     <div className="fakeimg" style={sty}>Image</div>
   </div>
 </div>
+</div>
+</div>
 
-
-    </>
+    
   )
 }
 
