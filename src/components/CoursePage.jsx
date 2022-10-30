@@ -1,6 +1,5 @@
 import React from 'react'
-import { useParams, useNavigate, Link } from 'react-router-dom'
-import Nav from './Nav';
+import { useParams } from 'react-router-dom'
 import '../css/CoursePage.css'
 
 

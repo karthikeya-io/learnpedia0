@@ -35,9 +35,7 @@ const Nav = () => {
                             <li><NavLink className="btn" to={'#'}>
                                 Contact
                             </NavLink></li>
-                            <li><NavLink className="btn" to={'/ci'}>
-                                CourseInfo
-                            </NavLink></li>
+                            
                         </ul>
                     </div>
 

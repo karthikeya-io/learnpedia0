@@ -1,53 +1,44 @@
 import React from 'react'
-import Image from '../images/loginimg2.jpg'
+import Image from '../images/pexels-pixabay-276452.jpg'
 import classes from '../css/Card.module.css'
 
-const Card = () => {
+const Card = (props) => {
+    
+    const {title, price, categorydb, desc, id} = props
+    let fdesc = desc.substr(0, 150)
+
     return (
         <>
-        <div className={classes.body}>
-            <div className={classes.container}>
-                <div className={`${classes.box} ${classes.one}`}>
-                    <div classbutton2={classes.details}>
-                        <div className={classes.topic}>Description</div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque consequatur corporis vitae nobis, ut veniam earum expedita eaque at placeat perferendis unde voluptates explicabo rerum distinctio quis, illo, porro et?</p>
-                        <div className={classes.rating}>
-                            <i className="fas fa-star"></i>
-                            <i className="fas fa-star"></i>
-                            <i className="fas fa-star"></i>
-                            <i className="fas fa-star"></i>
-                            <i className="fas fa-star"></i>
-                            <i className="fas fa-star"></i>
-                            <i className="fas fa-star"></i>
-                            <i className="fas fa-star"></i>
-                            <i className="far fa-star"></i>
-                            <i className="far fa-star"></i>
-                        </div>
-                        <div className={classes.priceBox}>
-                            <div className={classes.discount}>$1800.00</div>
-                            <div className={classes.price}>$1500.00</div>
-                        </div>
+            <div className={classes.wrapper}>
+                <div className={classes.right}>
+                    <div className={classes.logo}>{title}</div>
+                    <div className={classes.stars}>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="far fa-star"></i>
+                        <i className="far fa-star"></i>
                     </div>
-                    <div className={classes.button1}>
-                        <button>Add To Cart</button>
+                    <div className={classes.about}>
+                        <p>{fdesc}</p>
                     </div>
+                    <button>
+                        <h2 className={classes.price}>Enroll Now</h2>
+                        <h2>₹{price}</h2>
+                    </button>
                 </div>
-                <div className={`${classes.box} ${classes.two}`}>
-                    <div className={classes.imageBox}>
-                        <div className={classes.image}>
-                            <img src={Image} alt=""/>
-                        </div>
-                        <div className={classes.info}>
-                            <div className={classes.brand}>SONY</div>
-                            <div className={classes.name}>SONY ALPHA A7 KIT</div>
-                            <div className={classes.shipping}>FREE SHIPPING</div>
-                            <div className={classes.button2}>
-                                <button>Login For More</button>
-                            </div>
-                        </div>
-                    </div>
+                <div style={{
+                    "background": `url(${Image}) no-repeat`, "backgroudSize": "cover", "backgroundPosition": "center", "height": "100%",
+                    "width": "50%", "borderRadius": "0 5px 5px 0"
+                }} className={classes.left} >
+                    <ul>
+                        <li>Flexible</li>
+                        <li>Life time access</li>
+                        <li>Taught by professionals</li>
+                        <li>Doubt assistance</li>
+                        <li>@just ₹{price}</li>
+                    </ul>
                 </div>
-            </div>
             </div>
         </>
     )
