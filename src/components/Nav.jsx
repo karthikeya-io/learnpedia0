@@ -41,15 +41,15 @@ const Nav = ({ userDetails, signOut }) => {
                                     <li><NavLink className="btn" to={'/courses'}>
                                         Courses
                                     </NavLink></li>
-                                    <li><NavLink className="btn" to={'#'}>
+                                    {/* <li><NavLink className="btn" to={'#'}>
                                         Services
-                                    </NavLink></li>
+                                    </NavLink></li> */}
                                     <li><NavLink className="btn" to={'#'}>
                                         Help
                                     </NavLink></li>
-                                    <li><NavLink className="btn" to={'#'}>
+                                    {/* <li><NavLink className="btn" to={'#'}>
                                         Contact
-                                    </NavLink></li>
+                                    </NavLink></li> */}
 
                                 </ul>
                             </div>
@@ -102,15 +102,15 @@ const Nav = ({ userDetails, signOut }) => {
                                     <li><NavLink className="btn" to={'/courses'}>
                                         Courses
                                     </NavLink></li>
-                                    <li><NavLink className="btn" to={'#'}>
+                                    {/* <li><NavLink className="btn" to={'#'}>
                                         Services
-                                    </NavLink></li>
+                                    </NavLink></li> */}
                                     <li><NavLink className="btn" to={'#'}>
                                         Help
                                     </NavLink></li>
-                                    <li><NavLink className="btn" to={'#'}>
+                                    {/* <li><NavLink className="btn" to={'#'}>
                                         Contact
-                                    </NavLink></li>
+                                    </NavLink></li> */}
 
                                 </ul>
                             </div>

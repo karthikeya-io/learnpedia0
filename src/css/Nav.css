@@ -14,6 +14,7 @@ body.dark nav{
 
 }
 
+
 nav .nav-bar{
     position: relative;
     height: 100%;
@@ -34,6 +35,8 @@ nav .nav-bar .sidebarOpen{
     cursor: pointer;
     display: none;
 }
+
+
 
 nav .nav-bar .logo a{
     font-size: 25px;
@@ -185,7 +188,7 @@ nav .nav-bar .logo a{
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    margin-top:55px;
+    margin-top:50px;
   }
   
   /* Links inside the dropdown */
