@@ -15,9 +15,21 @@ import Admin from './components/Admin';
 import AdminCourses from './components/AdminCourses';
 import StudentProfile from './components/StudentProfile';
 import UpdateStudentProfile from './components/UpdateStudentProfile';
+import StudentHome from './components/StudentHome'
+
+// import firebaseConfig from './config/firebaseConfig';
+
+//init firebase
+// const app = initializeApp(firebaseConfig);
+
+//redux
+import {Provider} from 'react-redux'
+import store from './store';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  <Provider store={store}>
   <Router>
     <Routes>
       
@@ -40,9 +52,12 @@ root.render(
         </Route>
         <Route path='sprofile' element={<StudentProfile/>}></Route>
         <Route path='usprofile' element={<UpdateStudentProfile/>}></Route>
+        <Route path='shome' element={<StudentHome/>}></Route>
       </Route>
+      
     </Routes>
   </Router>
+  </Provider>
 );
 
 

@@ -39,6 +39,17 @@
       "cnfpassword": "1111",
       "gender": "female",
       "id": 4
+    },
+    {
+      "role": "student",
+      "fname": "test",
+      "lname": "test",
+      "email": "karthikeya.b20@iiits.in",
+      "phnumber": "111111111",
+      "password": "12345",
+      "cnfpassword": "12345",
+      "gender": "male",
+      "id": 5
     }
   ],
   "courses": [
@@ -69,6 +80,13 @@
       "categorydb": "engineering",
       "desc": "Object Oriented programming, In this course you will learn object oriented principles using java. ",
       "id": 4
+    },
+    {
+      "title": "fdfd",
+      "price": "999",
+      "categorydb": "engineering",
+      "desc": "This course teaches you react",
+      "id": 5
     }
   ],
   "profile": {

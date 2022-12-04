@@ -2,10 +2,14 @@ import React,{useState} from 'react'
 import Image from '../images/loginimg2.jpg'
 import '../css/Loginform.css'
 
+import { connect } from 'react-redux'
+import { signIn } from '../action/learnpedia'
+import { useNavigate } from 'react-router-dom'
 
-const Loginform = () => {
 
-  const [formDetails, setFormDetails] = useState({})
+const Loginform = ({signIn}) => {
+  let navigate = useNavigate()
+  const [formDetails, setFormDetails] = useState({email:"", password:""})
 
   const changeHandler = (event) => {
     let name = event.target.name;
@@ -21,8 +25,14 @@ const Loginform = () => {
 
   const submitHandler = (event) => {
     event.preventDefault();
+    if(formDetails.email.length <= 0 || formDetails.password.length <= 0) {
+      alert("enter email and password")
+      return
+    }
     console.log(formDetails);
-    setFormDetails({});
+    signIn(formDetails)
+    setFormDetails({email:"", password:""});
+    navigate('/shome')
   }
 
   return (
@@ -44,10 +54,10 @@ const Loginform = () => {
           <form action="#" onSubmit={submitHandler}>
             <div className="input-boxes">
               <div className="input-box">
-                <input onChange={changeHandler} name='email' type="text" placeholder="Enter your email" required/>
+                <input onChange={changeHandler} name='email' type="text" placeholder="Enter your email" value={formDetails.email} required/>
               </div>
               <div className="input-box">
-                <input onChange={changeHandler} name='password' type="password" placeholder="Enter your password" required/>
+                <input onChange={changeHandler} name='password' type="password" placeholder="Enter your password" value={formDetails.password} required/>
               </div>
               <div className="text"><a href="#">Forgot password?</a></div>
               <div className="button input-box">
@@ -64,4 +74,17 @@ const Loginform = () => {
   )
 }
 
-export default Loginform;
+const mapStateToProps = state => {
+  console.log(state);
+  return {
+    userDetails: state.userDetails
+}
+}
+
+const mapDispatchToProps = dispatch => ({
+  signIn: (userDetails) => {
+    dispatch(signIn(userDetails))
+  },
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(Loginform);

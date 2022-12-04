@@ -164,6 +164,49 @@ nav .nav-bar .logo a{
     pointer-events: auto;
 }
 
+.userIcon {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+
+.dropdown-usericon{
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top:55px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown-usericon:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:hover .userIcon {
+    background-color: #3e8e41;
+  }
 .search-field::before{
     content: '';
     position: absolute;
@@ -213,6 +256,11 @@ body.dark .search-field i{
     text-decoration: none;
     color: var(--text-color);
     padding: 10px;
+}
+
+.userIcon{
+    font-size: 32px;
+    float: right;
 }
 
 @media (max-width: 790px) {
