@@ -44,7 +44,7 @@ const Nav = ({ userDetails, signOut }) => {
                                     {/* <li><NavLink className="btn" to={'#'}>
                                         Services
                                     </NavLink></li> */}
-                                    <li><NavLink className="btn" to={'#'}>
+                                    <li><NavLink className="btn" to={'/help'}>
                                         Help
                                     </NavLink></li>
                                     {/* <li><NavLink className="btn" to={'#'}>
@@ -105,7 +105,7 @@ const Nav = ({ userDetails, signOut }) => {
                                     {/* <li><NavLink className="btn" to={'#'}>
                                         Services
                                     </NavLink></li> */}
-                                    <li><NavLink className="btn" to={'#'}>
+                                    <li><NavLink className="btn" to={'/help'}>
                                         Help
                                     </NavLink></li>
                                     {/* <li><NavLink className="btn" to={'#'}>
