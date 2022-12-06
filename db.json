@@ -21,35 +21,15 @@
       "id": 2
     },
     {
-      "fname": "Karthikeya",
-      "email": "karthikeya.b20@iiits.in",
-      "phnumber": "9999999999",
-      "password": "1111",
-      "cnfpassword": "1111",
-      "gender": "male",
-      "id": 3
-    },
-    {
       "role": "student",
       "fname": "testf",
       "lname": "testl",
-      "email": "test@iiits.in",
+      "email": "test1@iiits.in",
       "phnumber": "9999999999",
       "password": "1111",
       "cnfpassword": "1111",
       "gender": "female",
-      "id": 4
-    },
-    {
-      "role": "student",
-      "fname": "test",
-      "lname": "test",
-      "email": "karthikeya.b20@iiits.in",
-      "phnumber": "111111111",
-      "password": "12345",
-      "cnfpassword": "12345",
-      "gender": "male",
-      "id": 5
+      "id": 3
     }
   ],
   "courses": [

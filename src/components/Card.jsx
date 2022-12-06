@@ -1,8 +1,11 @@
 import React from 'react'
 import Image from '../images/pexels-pixabay-276452.jpg'
 import classes from '../css/Card.module.css'
+import { connect } from 'react-redux'
+import { Link } from 'react-router-dom'
 
-const Card = (props) => {
+
+const Card = (props, {userDetails}) => {
     
     const {title, price, categorydb, desc, id} = props
     let fdesc = desc.substr(0, 150)
@@ -23,7 +26,8 @@ const Card = (props) => {
                         <p>{fdesc}</p>
                     </div>
                     <button>
-                        <h2 className={classes.price}>Enroll Now</h2>
+                        {userDetails ?  <Link className={classes.link} to={'/shome'}><h2 className={classes.price}>Enroll Now</h2></Link> :  <Link className={classes.link} to={'/login'}><h2 className={classes.price}>Enroll Now</h2></Link>}
+                       
                         <h2>₹{price}</h2>
                     </button>
                 </div>
@@ -44,4 +48,14 @@ const Card = (props) => {
     )
 }
 
-export default Card
+const mapStateToProps = state => {
+    console.log(state);
+    return {
+      userDetails: state.learnpedia
+  }
+  }
+  
+  
+  const mapDispatchToProps = dispatch => ({})
+  
+  export default connect(mapStateToProps, mapDispatchToProps)(Card)

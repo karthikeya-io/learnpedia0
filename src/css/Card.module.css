@@ -98,3 +98,6 @@ ul li {
 .left:hover ul {
   margin-left: 0px;
 }
+.link {
+  text-decoration: none;
+}

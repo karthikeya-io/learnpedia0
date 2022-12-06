@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import Card from './Card'
 import classes from '../css/Courses.module.css'
+import { connect } from 'react-redux'
 
-
-const Courses = () => {
+const Courses = ({userDetails}) => {
     const [courses, setCourses] = useState([])
-    useEffect(() => {
+    useEffect( () => {
         fetch('http://localhost:4000/courses')
             .then((response) => response.json())
             .then((data) => {
@@ -29,4 +29,14 @@ const Courses = () => {
   )
 }
 
-export default Courses
+const mapStateToProps = state => {
+  console.log(state);
+  return {
+    userDetails: state.learnpedia
+}
+}
+
+
+const mapDispatchToProps = dispatch => ({})
+
+export default connect(mapStateToProps, mapDispatchToProps)(Courses)
