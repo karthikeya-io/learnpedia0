@@ -15,7 +15,8 @@ import Admin from './components/Admin';
 import AdminCourses from './components/AdminCourses';
 import StudentProfile from './components/StudentProfile';
 import UpdateStudentProfile from './components/UpdateStudentProfile';
-import StudentHome from './components/StudentHome'
+import StudentHome from './components/StudentHome';
+import Help from "./components/Help";
 
 // import firebaseConfig from './config/firebaseConfig';
 
@@ -41,6 +42,9 @@ root.render(
         <Route path='courses'  >
           <Route index element={<Courses/>}/>
           <Route path=':courseid' element={<CoursePage/>}></Route>
+        </Route>
+        <Route path='help'  >
+          <Route index element={<Help/>}/>
         </Route>
         <Route path='card' element={<Card/>}></Route>
         <Route path='signup' element={<Signupform/>}></Route>
