@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import classes from "../css/Admin.module.css"
 import CoursesTable from './CoursesTable'
+import { Link } from 'react-router-dom'
 
 const Admin = () => {
   const { body, column, left, right, section } = classes
@@ -20,8 +21,8 @@ const Admin = () => {
 
       <div className={body}>
         <div className={`${column} ${left}`}>
-        <a style={{"textDecoration": "none"}} href='/admin'><div className={section}>Users</div></a>
-        <a style={{"textDecoration": "none"}} href="/admin/courses"><div className={section}>Courses</div></a>
+          <Link style={{ "textDecoration": "none" }} to={"/admin"}> <div className={section}>Users</div></Link>
+          <Link style={{ "textDecoration": "none" }} to={"/admin/courses"}> <div className={section}>Courses</div></Link>
         </div>
         <div className={`${column} ${right}`}>
           <CoursesTable courses={courses} ></CoursesTable>

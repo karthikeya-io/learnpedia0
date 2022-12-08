@@ -132,6 +132,26 @@ const Signupform = () => {
                   </label>
                 </div>
               </div>
+              <div className="gender-details">
+                <input id="dot-4" onChange={changeHandler} type="radio" name="role"  value="student" checked={formDetails.role === 'student'} />
+                <input id="dot-5" onChange={changeHandler} type="radio" name="role"  value="teacher" checked={formDetails.role === 'teacher'} />
+                {/* <input onChange={changeHandler} type="radio" name="gender" id="dot-3" value="others" checked={formDetails.gender === 'others'} /> */}
+                <span className="gender-title">Select role</span>
+                <div className="category">
+                  <label   htmlFor="dot-4">
+                    <span className="dot four"></span>
+                    <span className="gender">Student</span>
+                  </label>
+                  <label  htmlFor="dot-5">
+                    <span className="dot five"></span>
+                    <span className="gender">Teacher</span>
+                  </label>
+                  {/* <label htmlFor="dot-3">
+                    <span className="dot three"></span>
+                    <span className="gender">Prefer not to say</span>
+                  </label> */}
+                </div>
+              </div>
               <div className="button">
                 <input type="submit" value="Register" />
               </div>

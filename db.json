@@ -1,6 +1,7 @@
 {
   "users": [
     {
+      "role": "admin",
       "fname": "Karthikeya",
       "email": "karthikeya.b20@iiits.in",
       "phnumber": "9999999999",
@@ -11,6 +12,7 @@
       "id": 1
     },
     {
+      "role": "student",
       "fname": "Sanjay",
       "lname": "Gnana",
       "email": "test@iiits.in",
@@ -21,15 +23,37 @@
       "id": 2
     },
     {
-      "role": "student",
+      "role": "teacher",
       "fname": "testf",
       "lname": "testl",
       "email": "test1@iiits.in",
       "phnumber": "9999999999",
-      "password": "1111",
-      "cnfpassword": "1111",
+      "password": "11111",
+      "cnfpassword": "11111",
       "gender": "female",
       "id": 3
+    },
+    {
+      "role": "student",
+      "fname": "test",
+      "lname": "test",
+      "email": "test@iiits.in",
+      "phnumber": "9999999999",
+      "password": "11111",
+      "cnfpassword": "11111",
+      "gender": "female",
+      "id": 4
+    },
+    {
+      "role": "student",
+      "fname": "test3",
+      "lname": "Bethu",
+      "email": "tests@iiits.in",
+      "phnumber": "9999999999",
+      "password": "11111",
+      "cnfpassword": "11111",
+      "gender": "male",
+      "id": 5
     }
   ],
   "courses": [
@@ -60,13 +84,6 @@
       "categorydb": "engineering",
       "desc": "Object Oriented programming, In this course you will learn object oriented principles using java. ",
       "id": 4
-    },
-    {
-      "title": "fdfd",
-      "price": "999",
-      "categorydb": "engineering",
-      "desc": "This course teaches you react",
-      "id": 5
     }
   ],
   "profile": {

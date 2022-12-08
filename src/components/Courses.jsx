@@ -19,7 +19,7 @@ const Courses = ({userDetails}) => {
         <div className={classes.cardGrid}>
           {courses.map(course => {
             return (
-              <Card key={course.id} {...course} />
+              <Card  key={course.id} {...course} />
             )
           })}
           

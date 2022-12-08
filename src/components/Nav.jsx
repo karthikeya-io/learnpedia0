@@ -35,7 +35,7 @@ const Nav = ({ userDetails, signOut }) => {
                                 </div>
 
                                 <ul className="nav-links">
-                                    <li><NavLink className="btn" to={`/`}>
+                                    <li><NavLink className="btn" to={`/shome`}>
                                         Home
                                     </NavLink></li>
                                     <li><NavLink className="btn" to={'/courses'}>

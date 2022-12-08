@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 
 
-const Card = (props, {userDetails}) => {
+const Card = (props, userDetails) => {
     
     const {title, price, categorydb, desc, id} = props
     let fdesc = desc.substr(0, 150)
@@ -25,8 +25,8 @@ const Card = (props, {userDetails}) => {
                     <div className={classes.about}>
                         <p>{fdesc}</p>
                     </div>
-                    <button>
-                        {userDetails ?  <Link className={classes.link} to={'/shome'}><h2 className={classes.price}>Enroll Now</h2></Link> :  <Link className={classes.link} to={'/login'}><h2 className={classes.price}>Enroll Now</h2></Link>}
+                    <button className={classes.button}>
+                        {userDetails ?  <Link className={classes.link} to={'/courses/1'}><h2 className={classes.price}>Enroll Now</h2></Link> :  <Link className={classes.link} to={'/login'}><h2 className={classes.price}>Enroll Now</h2></Link>}
                        
                         <h2>₹{price}</h2>
                     </button>

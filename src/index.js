@@ -26,6 +26,9 @@ import Help from "./components/Help";
 //redux
 import {Provider} from 'react-redux'
 import store from './store';
+import LessonUpload from './components/LessonUpload';
+import PlayListVideo from './components/PlayListVideo';
+import InstructorHome from './components/InstructorHome';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -36,12 +39,14 @@ root.render(
       
       <Route path='/' element={<App/>} >
       <Route index element={<Home/>}></Route>
-        <Route path='educator'>
+        <Route path='educator' >
+        <Route index element={<InstructorHome/>}></Route>
         <Route path='courseupload' element={<CourseUploadform/>}></Route>
+        <Route path='lessonupload' element={<LessonUpload/>}></Route>
         </Route>
         <Route path='courses'  >
           <Route index element={<Courses/>}/>
-          <Route path=':courseid' element={<CoursePage/>}></Route>
+          <Route path=':courseid' element={<PlayListVideo/>}></Route>
         </Route>
         <Route path='help'  >
           <Route index element={<Help/>}/>

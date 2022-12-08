@@ -40,7 +40,14 @@ const Loginform = ({ signIn }) => {
     if (userData.length > 0) {
       signIn(userData[0])
       setFormDetails({ email: "", password: "" });
-      navigate('/shome')
+      if (userData[0].role == 'student') {
+        navigate('/shome')
+      } else if(userData[0].role == 'teacher') {
+        navigate('/educator')
+      }else if(userData[0].role == 'admin') {
+        navigate('/admin')
+      }
+      
     } else {
       alert('no user found with these credentials check email and password')
     }

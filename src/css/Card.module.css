@@ -55,13 +55,13 @@
   margin-left: 12px;
 }
 
-button:hover {
+.button:hover {
   background: linear-gradient(to left, var(--body-color) 50%, var(--nav-color) 50%) right;
   background-size: 200% 100%;
   /* transform: scale(0.98); */
 }
 
-button:hover h2 {
+.button:hover h2 {
   color: #3d5adb;
 }
 
